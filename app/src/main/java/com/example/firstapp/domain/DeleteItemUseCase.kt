@@ -1,8 +1,8 @@
 package com.example.firstapp.domain
 
-class DeleteItemUseCase {
+class DeleteItemUseCase (private val shopListRepository: ShopListRepository) {
 
     fun deleteShopItem(shopItem: ShopItem) {
-        TODO()
+        shopListRepository.deleteShopItem(shopItem)
     }
 }
